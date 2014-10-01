@@ -1,0 +1,13 @@
+#content {
+	background-color: black;
+}
+body {
+	color: white;
+}
+#header {
+	height: 20px;
+}
+#close {
+	text-decoration: none;
+	color: white;
+}

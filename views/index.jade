@@ -1,0 +1,24 @@
+extends layout
+
+block content
+	br
+	h1 Todos
+	br
+	each todo in todos
+		.col-md-8.col-sm-8.col-xs-8
+			p #{todo.name}
+		.col-md-2.col-sm-2.col-xs-2
+			a(href="/#{todo._id}")
+				button(class="btn btn-primary")
+					span(class="glyphicon glyphicon-pencil")
+		.col-md-2.col-sm-2.col-xs-2
+			a(href="/del/#{todo._id}")
+				button(class="btn btn-danger")
+					span(class="glyphicon glyphicon-remove")
+	.col-sm-12.col-xs-12.col-md-12
+		hr
+	.col-sm-12.col-xs-12.col-md-12
+		form(class="form-inline" method="POST")
+				input(class="form-control" type="text" name="name" placeholder="Add todo")
+				button(class="form-control btn btn-success" type="submit")
+						span.glyphicon.glyphicon-plus

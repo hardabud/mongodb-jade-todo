@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	br
+	p(style="text-align: right" id)
+		a(href="/")
+			span.glyphicon.glyphicon-remove#close
+	h1 Edit todo
+	br
+	h2(style="text-align: center;") #{todo.name}
+	br
+	.col-sm-12.col-xs-12.col-md-12
+		hr
+	.col-sm-12.col-xs-12.col-md-12
+		form(class="form-inline" method="POST" action="edit/#{todo._id}")
+			input(class="form-control" type="text" name="name")
+			button(class="form-control btn btn-primary" type="submit")
+				span.glyphicon.glyphicon-pencil
