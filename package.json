@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "express": "~4.9.5",
-    "mongodb": "~1.4.17",npm insta
+    "mongodb": "~1.4.17",
     "jade": "~1.7.0",
     "body-parser": "~1.9.0"
   }
